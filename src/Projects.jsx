@@ -22,7 +22,8 @@ export default function Projects(){
                        It provides its users to keep track of any kind of issue,
                        along with the ability to update its status, whether it is finished, closed or assigned.
                        It supports all the CRUD features regarding to issues, however some operations such as delete,
-                       requires the user to login using Google Account. It is based on the MERN stack.`;
+                       requires the user to login using Google Account. It is based on the MERN stack. These features
+                       are shown in the video below.`;
 
     let description2 = `This is a basic project created using Spring MVC, and Hibernate,
                         with MySQL as the database. It provides user with the basic functionality,
@@ -38,14 +39,14 @@ export default function Projects(){
 
     videos = videos.map((it, index) => {
         return <div key={descriptions[index]}>
-            <video width="100%" height="80%" controls>
-                <source src={it} type="video/mp4"/>
-            </video>
-            <div className="description">
-                {
-                    descriptions[index]
-                }
-            </div>
+                     <div className="description">
+                    {
+                        descriptions[index]
+                    }
+                    </div>
+                    <video width="100%" height="80%" controls>
+                        <source src={it} type="video/mp4"/>
+                    </video>
         </div>
     })
 
